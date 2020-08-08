@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="newcss.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">UP Jal Nigam</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="query">Query</a>
+            </li>
+           
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+      <div class="container contact">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="contact-info">
+                    <img src="/search-icon.png" alt="image"/>
+                    <h2>Search</h2>
+                    <h4>Type in the details and u go !</h4>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="contact-form" id="formset">
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="fname">Block Name</label>
+                      <div class="col-sm-10">          
+                        <input type="text" class="form-control" id="blockname" placeholder="Enter Block Name" name="fname">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="example-date-input" class="col-sm-2 col-form-label">From Date</label>
+                        <div class="col-sm-10">
+                          <input  class="form-control" type="date" value="19-08-2011" id="datefrom">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="example-date-input" class="col-sm-2 col-form-label">To Date</label>
+                        <div class="col-sm-10">
+                          <input  class="form-control" type="date" value="19-08-2011" id="dateto">
+                        </div>
+                      </div>
+                      
+                    <!-- <div class="form-group">
+                      <label class="control-label col-sm-2" for="lname">Last Name:</label>
+                      <div class="col-sm-10">          
+                        <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="email">Email:</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                      </div>
+                    </div> -->
+                    
+                    <div class="form-group">
+                      <div class="row" id="tags"> 
+                                               
+                      </div>
+                    </div>
+                      
+                      
+
+                  
+
+                     <div class="form-group">
+                        <label class="col-sm-4" for="exampleSelect1 ">Element Report</label>
+                        <div class="row">
+                              <div class="col-sm-5">
+                                <select class="form-control " id="element">                                  
+                                      <option>colieform</option>
+                                      <option>eolie</option>        
+                                      <option>ph</option>     
+                                      <option>turbidity</option>     
+                                      <option>tds</option>       
+                                      <option>chloride</option>     
+                                      <option>hardness</option>       
+                                      <option>iron</option>       
+                                      <option>nitrate</option>        
+                                      <option> sulphate</option>        
+                                      <option> floride</option>       
+                                      <option> arsenic</option>       
+                                      <option> alkinity</option>       
+                                      <option> leftoverchloride; 
+                                </select>
+                             </div>
+                            <div class="col-sm-offset-2 col-md-7">                          
+                                 <button class="btn btn-info" id="addelement"><>Element</button>                               
+                            </div>                       
+                        </div>
+                    </div>
+                        
+                    <div class="form-group">        
+                      <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                      </div>
+
+                     
+
+
+
+                     
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   
+
+<script src="query.js"></script>
+<script>
+  function change(ele) {
+    // console.log(ele.parentNode.firstChild.nextSibling) 
+      if (ele.parentNode.firstChild.nextSibling.checked==false){
+        //  console.log("wwwww")
+         ele.parentNode.firstChild.nextSibling.checked=true
+        ele.textContent="OOR"}
+      else{ele.parentNode.firstChild.nextSibling.checked=false
+        // console.log("ccccc")
+        ele.textContent="IR"}
+     }
+</script>
+</body>
+</html>
